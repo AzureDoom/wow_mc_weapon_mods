@@ -5,7 +5,7 @@
         "description": "Adds World of Warcraft Weapons into Minecraft",
 		"version": "${version}",
         "mcversion": "${mcversion}",
-        "url": "https://minecraft.curseforge.com/projects/devil-may-cry-weapons",
+        "url": "https://minecraft.curseforge.com/projects/world-of-warcraft-weapons",
         "authorList": [
             "AzureZhen"
         ],
