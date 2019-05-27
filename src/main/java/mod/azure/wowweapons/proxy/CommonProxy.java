@@ -1,6 +1,11 @@
 package mod.azure.wowweapons.proxy;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import electroblob.wizardry.constants.Tier;
 import mod.azure.wowweapons.WoWWeaponsMod;
+import mod.azure.wowweapons.items.ItemBaseMagic;
 import mod.azure.wowweapons.items.ItemBaseSword;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -8,6 +13,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -47,13 +53,27 @@ public class CommonProxy {
     	}
 	}
 	
-	public static Item[] itemList = new Item[] {
-			new ItemBaseSword("thunderfury", 1),
-			new ItemBaseSword("marlis_touch", 1),
-			new ItemBaseSword("touch_of_chaos", 1),
-			new ItemBaseSword("thoughtblighter", 1),
-			new ItemBaseSword("doomfinger", 1),
-			new ItemBaseSword("anzusscorn", 1)
-		    };
-		    public static NonNullList<ItemStack> variantList;
+	public static Item[] itemList;
+	public static NonNullList<ItemStack> variantList;  
+	static {
+		if(Loader.isModLoaded("ebwizardry")) {
+			List<Item> items = new ArrayList<Item>();
+			items.add(new ItemBaseSword("thunderfury", 1));
+			items.add(new ItemBaseMagic("marlis_touch", 1, Tier.MASTER, null));
+			items.add(new ItemBaseMagic("touch_of_chaos", 1, Tier.MASTER, null));
+			items.add(new ItemBaseMagic("thoughtblighter", 1, Tier.MASTER, null));
+			items.add(new ItemBaseMagic("doomfinger", 1, Tier.MASTER, null));
+			items.add(new ItemBaseMagic("anzusscorn", 1, Tier.MASTER, null));
+			itemList = items.toArray(new Item[items.size()]);
+		} else {
+			List<Item> items = new ArrayList<Item>();
+			items.add(new ItemBaseSword("thunderfury", 1));
+			items.add(new ItemBaseSword("marlis_touch", 1));
+			items.add(new ItemBaseSword("touch_of_chaos", 1));
+			items.add(new ItemBaseSword("thoughtblighter", 1));
+			items.add(new ItemBaseSword("doomfinger", 1));
+			items.add(new ItemBaseSword("anzusscorn", 1));
+			itemList = items.toArray(new Item[items.size()]);
+		}
+	}
 }
