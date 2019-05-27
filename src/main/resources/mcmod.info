@@ -1,0 +1,18 @@
+[
+    {
+        "modid": "wowweapons",
+        "name": "World of Warcraft Weapons",
+        "description": "Adds World of Warcraft Weapons into Minecraft",
+		"version": "${version}",
+        "mcversion": "${mcversion}",
+        "url": "https://minecraft.curseforge.com/projects/devil-may-cry-weapons",
+        "authorList": [
+            "AzureZhen"
+        ],
+        "credits": "",
+        "logoFile": "pack.png",
+        "requiredMods": [ ],
+        "dependencies": [ "forge" ],
+        "useDependencyInformation": "true"
+    }
+]

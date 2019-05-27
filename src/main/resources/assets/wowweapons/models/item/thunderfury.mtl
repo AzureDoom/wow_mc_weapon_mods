@@ -1,0 +1,34 @@
+# Blender MTL File: 'None'
+# Material Count: 5
+
+newmtl Clouds_01
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+d 0.000000
+map_Kd wowweapons:items/Clouds_01
+
+newmtl Glow_01
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+d 0.000000
+map_Kd wowweapons:items/glow_01
+
+newmtl Glow_02
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+d 0.000000
+map_Kd wowweapons:items/glow_02
+
+
+newmtl Insides_01
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+d 0.000000
+map_Kd wowweapons:items/insides_01
+
+
+newmtl ashbringer02
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+d 1.000000
+map_Kd wowweapons:items/thunderfury
