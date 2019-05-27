@@ -27,12 +27,12 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.registries.IForgeRegistry;
 
-@Mod(modid = WoWWeaponsMod.modid, version = WoWWeaponsMod.version, dependencies = "after:mmorpg;required-after:forge@[14.23.5.2768,)")
+@Mod(modid = WoWWeaponsMod.modid, version = WoWWeaponsMod.version, dependencies = "after:mmorpg;after:ebwizardry;required-after:forge@[14.23.5.2768,)")
 public class WoWWeaponsMod {
 
 	public static final String modid = "wowweapons";
 	public static final String MODNAME = "World of Warcraft Weapons";
-	public static final String version = "0.0.1";
+	public static final String version = "0.0.2";
 	
 	@SidedProxy(clientSide = "mod.azure.wowweapons.proxy.ClientProxy", serverSide = "mod.azure.wowweapons.proxy.CommonProxy")
     public static CommonProxy proxy;
