@@ -1,0 +1,60 @@
+{
+    "pools": [
+        {
+            "name": "main",
+			"rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 10,
+                    "name": "wowweapons:thunderfury"
+                },
+                {
+                    "type": "item",
+                    "weight": 10,
+                    "name": "wowweapons:armageddon"
+                },
+                {
+                    "type": "item",
+                    "weight": 10,
+                    "name": "wowweapons:frostmourne"
+                },
+                {
+                    "type": "item",
+                    "weight": 10,
+                    "name": "wowweapons:ashbringer"
+                },
+                {
+                    "type": "item",
+                    "weight": 10,
+                    "name": "wowweapons:swordofathousandtruths"
+                },
+                {
+                    "type": "item",
+                    "weight": 10,
+                    "name": "wowweapons:marlis_touch"
+                },
+                {
+                    "type": "item",
+                    "weight": 10,
+                    "name": "wowweapons:touch_of_chaos"
+                },
+                {
+                    "type": "item",
+                    "weight": 10,
+                    "name": "wowweapons:thoughtblighter"
+                },
+                {
+                    "type": "item",
+                    "weight": 10,
+                    "name": "wowweapons:doomfinger"
+                },
+                {
+                    "type": "item",
+                    "weight": 10,
+                    "name": "wowweapons:anzusscorn"
+                }
+            ]
+        }
+    ]
+}
