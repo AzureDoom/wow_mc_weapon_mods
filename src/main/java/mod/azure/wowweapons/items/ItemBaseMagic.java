@@ -8,7 +8,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 
 public class ItemBaseMagic extends ItemWand  {
-	
+
 
 	public ItemBaseMagic(String name, Tier tier, Element element) {
 		super(tier, element);
@@ -18,7 +18,7 @@ public class ItemBaseMagic extends ItemWand  {
 		this.tier = tier;
 		this.element = element;
 	}
-	
+
 	public String getTranslationKey(ItemStack stack) {
 		return this.getTranslationKey();
 	}

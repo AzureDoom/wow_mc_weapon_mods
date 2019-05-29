@@ -15,22 +15,22 @@ import net.minecraftforge.fml.relauncher.Side;
 
 @Mod.EventBusSubscriber(Side.CLIENT)
 public class ClientProxy extends CommonProxy {
-	
+
 	@EventHandler
 	public void preInit() {
 		OBJLoader.INSTANCE.addDomain(WoWWeaponsMod.modid);
-    }
-	
+	}
+
 	@EventHandler
 	public void init() {
-		
+
 	}
-	
+
 	@EventHandler
 	public void postInit() {
-		
+
 	}
-	
+
 	@SubscribeEvent
 	public static void registerModels(ModelRegistryEvent event) {
 		for (Item item : itemList) {

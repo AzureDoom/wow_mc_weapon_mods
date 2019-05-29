@@ -22,17 +22,17 @@ public class Tab extends CreativeTabs {
 	public String setTranslatedTabLabel() {
 		return "tab." + WoWWeaponsMod.modid;
 	}
-	
+
 	@Override
 	public ItemStack getIcon() {
 		int ticks = Minecraft.getMinecraft().ingameGUI.getUpdateCounter();
 		if (ticks >= this.nextTicks) {
 			this.nextTicks = ticks + 8;
 			if (++this.index >= CommonProxy.variantList.size()) this.index = 0;
-			
+
 			this.stack = CommonProxy.variantList.get(this.index);
 		}setBackgroundImageName("item_search.png");
-		
+
 		return this.createIcon();
 	}
 
@@ -40,7 +40,7 @@ public class Tab extends CreativeTabs {
 	public ItemStack createIcon() {
 		return this.stack;
 	}
-	
+
 	@Override
 	public boolean hasSearchBar() {
 		return true;

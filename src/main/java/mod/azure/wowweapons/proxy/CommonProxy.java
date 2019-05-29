@@ -23,35 +23,35 @@ import net.minecraftforge.registries.IForgeRegistry;
 @Mod.EventBusSubscriber
 public class CommonProxy {
 
-	
+
 	public void preInit() {
-		
-    }
+
+	}
 
 	public void init() {
 	}
-	
+
 	public void postInit() {
-		
+
 	}
-	
+
 	@Mod.EventBusSubscriber
 	public static class RegistrationHandler {
 		@SubscribeEvent
-    	public static void registerItems(RegistryEvent.Register<Item> event) {
-    		IForgeRegistry<Item> registry = event.getRegistry();
-    		
-    		for (Item item : itemList) {
-    			registry.register(item);
-    		}
-    		
-    		variantList = NonNullList.create();
-    		for (Item item : itemList) {
-    			item.getSubItems(WoWWeaponsMod.tab, variantList);
-    		}
-    	}
+		public static void registerItems(RegistryEvent.Register<Item> event) {
+			IForgeRegistry<Item> registry = event.getRegistry();
+
+			for (Item item : itemList) {
+				registry.register(item);
+			}
+
+			variantList = NonNullList.create();
+			for (Item item : itemList) {
+				item.getSubItems(WoWWeaponsMod.tab, variantList);
+			}
+		}
 	}
-	
+
 	public static Item[] itemList;
 	public static NonNullList<ItemStack> variantList;  
 	static {

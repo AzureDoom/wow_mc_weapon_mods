@@ -16,7 +16,7 @@ public class ItemBaseSword extends ItemSword {
 		this.setCreativeTab(WoWWeaponsMod.tab);
 		this.setHasSubtypes(true);
 	}
-	
+
 	public String getTranslationKey(ItemStack stack) {
 		return super.getTranslationKey();
 	}
