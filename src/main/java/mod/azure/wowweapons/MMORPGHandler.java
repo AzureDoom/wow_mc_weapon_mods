@@ -14,7 +14,7 @@ import net.minecraftforge.fml.common.Loader;
 
 public class MMORPGHandler {
 
-	public static void registerMMORPG() {
+	public MMORPGHandler() {
 		MineAndSlashAPI.addCompatibleItem("wowweapons:marlis_touch", new Level60ConfigItem().setType(new Staff()).setMaxRarity(4).setMinRarity(4));
 		MineAndSlashAPI.addCompatibleItem("wowweapons:touch_of_chaos", new Level60ConfigItem().setType(new Staff()).setMaxRarity(4).setMinRarity(4));
 		MineAndSlashAPI.addCompatibleItem("wowweapons:thoughtblighter", new Level60ConfigItem().setType(new Staff()).setMaxRarity(2).setMinRarity(2));

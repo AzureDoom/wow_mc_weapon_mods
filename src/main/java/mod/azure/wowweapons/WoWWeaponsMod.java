@@ -68,7 +68,7 @@ public class WoWWeaponsMod {
     public void postInit(FMLPostInitializationEvent e) {
         proxy.postInit();
         if(Loader.isModLoaded("mmorpg")) {
-        	MMORPGHandler.registerMMORPG();
+        	MinecraftForge.EVENT_BUS.register(new MMORPGHandler());
         }
     }
 }
