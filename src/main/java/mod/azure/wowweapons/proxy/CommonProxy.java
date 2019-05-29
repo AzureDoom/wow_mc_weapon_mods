@@ -3,6 +3,7 @@ package mod.azure.wowweapons.proxy;
 import java.util.ArrayList;
 import java.util.List;
 
+import electroblob.wizardry.constants.Element;
 import electroblob.wizardry.constants.Tier;
 import mod.azure.wowweapons.WoWWeaponsMod;
 import mod.azure.wowweapons.items.ItemBaseMagic;
@@ -29,7 +30,6 @@ public class CommonProxy {
     }
 
 	public void init() {
-		
 	}
 	
 	public void postInit() {
@@ -59,15 +59,23 @@ public class CommonProxy {
 		if(Loader.isModLoaded("ebwizardry")) {
 			List<Item> items = new ArrayList<Item>();
 			items.add(new ItemBaseSword("thunderfury", 1));
-			items.add(new ItemBaseMagic("marlis_touch", 1, Tier.MASTER, null));
-			items.add(new ItemBaseMagic("touch_of_chaos", 1, Tier.MASTER, null));
-			items.add(new ItemBaseMagic("thoughtblighter", 1, Tier.MASTER, null));
-			items.add(new ItemBaseMagic("doomfinger", 1, Tier.MASTER, null));
-			items.add(new ItemBaseMagic("anzusscorn", 1, Tier.MASTER, null));
+			items.add(new ItemBaseSword("armageddon", 1));
+			items.add(new ItemBaseSword("frostmourne", 1));
+			items.add(new ItemBaseSword("ashbringer", 1));
+			items.add(new ItemBaseSword("swordofathousandtruths", 1));
+			items.add(new ItemBaseMagic("marlis_touch", 1, Tier.MASTER, Element.NECROMANCY));
+			items.add(new ItemBaseMagic("touch_of_chaos", 1, Tier.MASTER, Element.NECROMANCY));
+			items.add(new ItemBaseMagic("thoughtblighter", 1, Tier.MASTER, Element.NECROMANCY));
+			items.add(new ItemBaseMagic("doomfinger", 1, Tier.MASTER, Element.SORCERY));
+			items.add(new ItemBaseMagic("anzusscorn", 1, Tier.MASTER, Element.SORCERY));
 			itemList = items.toArray(new Item[items.size()]);
 		} else {
 			List<Item> items = new ArrayList<Item>();
 			items.add(new ItemBaseSword("thunderfury", 1));
+			items.add(new ItemBaseSword("armageddon", 1));
+			items.add(new ItemBaseSword("frostmourne", 1));
+			items.add(new ItemBaseSword("ashbringer", 1));
+			items.add(new ItemBaseSword("swordofathousandtruths", 1));
 			items.add(new ItemBaseSword("marlis_touch", 1));
 			items.add(new ItemBaseSword("touch_of_chaos", 1));
 			items.add(new ItemBaseSword("thoughtblighter", 1));
