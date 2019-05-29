@@ -1,0 +1,8 @@
+# Blender MTL File: 'None'
+# Material Count: 1
+
+newmtl item_objectcomponents_weapon_sword_2h_northrend_d_03_m2_Geoset_
+Ka 0.250000 0.250000 0.250000
+Kd 1.000000 1.000000 1.000000
+d 1.000000
+map_Kd wowweapons:items/armageddon_sword_2h_northrend_d_03blue
