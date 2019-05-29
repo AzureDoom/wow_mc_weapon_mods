@@ -24,6 +24,6 @@ public class MMORPGHandler {
 		MineAndSlashAPI.addCompatibleItem("wowweapons:armageddon", new Level100ConfigItem().setType(new Sword()).setMaxRarity(4).setMinRarity(4));
 		MineAndSlashAPI.addCompatibleItem("wowweapons:frostmourne", new Level80ConfigItem().setType(new Sword()).setMaxRarity(5).setMinRarity(5));
 		MineAndSlashAPI.addCompatibleItem("wowweapons:ashbringer", new Level100ConfigItem().setType(new Sword()).setMaxRarity(5).setMinRarity(5));
-		MineAndSlashAPI.addCompatibleItem("wowweapons:ashbringer", new Level2ConfigItem().setType(new Sword()).setMaxRarity(5).setMinRarity(5));
+		MineAndSlashAPI.addCompatibleItem("wowweapons:swordofathousandtruths", new Level2ConfigItem().setType(new Sword()).setMaxRarity(5).setMinRarity(5));
 	}
 }
