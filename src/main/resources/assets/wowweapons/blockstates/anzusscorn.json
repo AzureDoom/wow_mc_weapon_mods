@@ -1,11 +1,12 @@
 {
     "forge_marker": 1,
     "variants": {
-    "type": {
-		"1": {
+		"normal": [ { } ],
+		"inventory": [
+			{
 			   "model": "wowweapons:wand_1h_arakkoa_c_01_purple0.obj"
 			}
-    }
+		]
 	},
 	"defaults" : {
 	

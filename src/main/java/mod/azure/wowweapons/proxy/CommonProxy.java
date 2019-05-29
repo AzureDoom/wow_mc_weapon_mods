@@ -58,29 +58,29 @@ public class CommonProxy {
 	static {
 		if(Loader.isModLoaded("ebwizardry")) {
 			List<Item> items = new ArrayList<Item>();
-			items.add(new ItemBaseSword("thunderfury", 1));
-			items.add(new ItemBaseSword("armageddon", 1));
-			items.add(new ItemBaseSword("frostmourne", 1));
-			items.add(new ItemBaseSword("ashbringer", 1));
-			items.add(new ItemBaseSword("swordofathousandtruths", 1));
-			items.add(new ItemBaseMagic("marlis_touch", 1, Tier.MASTER, Element.NECROMANCY));
-			items.add(new ItemBaseMagic("touch_of_chaos", 1, Tier.MASTER, Element.NECROMANCY));
-			items.add(new ItemBaseMagic("thoughtblighter", 1, Tier.MASTER, Element.NECROMANCY));
-			items.add(new ItemBaseMagic("doomfinger", 1, Tier.MASTER, Element.SORCERY));
-			items.add(new ItemBaseMagic("anzusscorn", 1, Tier.MASTER, Element.SORCERY));
+			items.add(new ItemBaseSword("thunderfury", 22));
+			items.add(new ItemBaseSword("armageddon", 62));
+			items.add(new ItemBaseSword("frostmourne", 747));
+			items.add(new ItemBaseSword("ashbringer", 42));
+			items.add(new ItemBaseSword("swordofathousandtruths", 180));
+			items.add(new ItemBaseMagic("marlis_touch", Tier.MASTER, Element.NECROMANCY));
+			items.add(new ItemBaseMagic("touch_of_chaos", Tier.MASTER, Element.NECROMANCY));
+			items.add(new ItemBaseMagic("thoughtblighter", Tier.MASTER, Element.NECROMANCY));
+			items.add(new ItemBaseMagic("doomfinger", Tier.MASTER, Element.SORCERY));
+			items.add(new ItemBaseMagic("anzusscorn", Tier.MASTER, Element.SORCERY));
 			itemList = items.toArray(new Item[items.size()]);
 		} else {
 			List<Item> items = new ArrayList<Item>();
-			items.add(new ItemBaseSword("thunderfury", 1));
-			items.add(new ItemBaseSword("armageddon", 1));
-			items.add(new ItemBaseSword("frostmourne", 1));
-			items.add(new ItemBaseSword("ashbringer", 1));
-			items.add(new ItemBaseSword("swordofathousandtruths", 1));
-			items.add(new ItemBaseSword("marlis_touch", 1));
-			items.add(new ItemBaseSword("touch_of_chaos", 1));
-			items.add(new ItemBaseSword("thoughtblighter", 1));
-			items.add(new ItemBaseSword("doomfinger", 1));
-			items.add(new ItemBaseSword("anzusscorn", 1));
+			items.add(new ItemBaseSword("thunderfury", 22));
+			items.add(new ItemBaseSword("armageddon", 62));
+			items.add(new ItemBaseSword("frostmourne", 747));
+			items.add(new ItemBaseSword("ashbringer", 42));
+			items.add(new ItemBaseSword("swordofathousandtruths", 180));
+			items.add(new ItemBaseSword("marlis_touch", 8));
+			items.add(new ItemBaseSword("touch_of_chaos", 8));
+			items.add(new ItemBaseSword("thoughtblighter", 129));
+			items.add(new ItemBaseSword("doomfinger", 9));
+			items.add(new ItemBaseSword("anzusscorn", 18));
 			itemList = items.toArray(new Item[items.size()]);
 		}
 	}

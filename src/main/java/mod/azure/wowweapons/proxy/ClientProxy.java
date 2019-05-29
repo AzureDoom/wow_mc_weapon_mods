@@ -1,7 +1,6 @@
 package mod.azure.wowweapons.proxy;
 
 import mod.azure.wowweapons.WoWWeaponsMod;
-import mod.azure.wowweapons.util.IMultiType;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -18,8 +17,7 @@ import net.minecraftforge.fml.relauncher.Side;
 public class ClientProxy extends CommonProxy {
 	
 	@EventHandler
-	public void preInit()
-    {
+	public void preInit() {
 		OBJLoader.INSTANCE.addDomain(WoWWeaponsMod.modid);
     }
 	
@@ -35,9 +33,8 @@ public class ClientProxy extends CommonProxy {
 	
 	@SubscribeEvent
 	public static void registerModels(ModelRegistryEvent event) {
-		for (ItemStack variant : variantList) {
-			Item item = variant.getItem();
-			ModelLoader.setCustomModelResourceLocation(item, variant.getItemDamage(), new ModelResourceLocation(item.getRegistryName(), String.format("type=%d", ((IMultiType) item).getType(variant))));
+		for (Item item : itemList) {
+			ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
 		}
 	}
 }
