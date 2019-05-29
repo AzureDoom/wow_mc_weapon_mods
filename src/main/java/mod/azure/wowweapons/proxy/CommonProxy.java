@@ -8,7 +8,6 @@ import electroblob.wizardry.constants.Tier;
 import mod.azure.wowweapons.WoWWeaponsMod;
 import mod.azure.wowweapons.items.ItemBaseMagic;
 import mod.azure.wowweapons.items.ItemBaseSword;
-import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
