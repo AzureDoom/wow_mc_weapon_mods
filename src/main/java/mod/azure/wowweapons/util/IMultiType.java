@@ -1,4 +1,4 @@
-package mod.azure.wowweapons;
+package mod.azure.wowweapons.util;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

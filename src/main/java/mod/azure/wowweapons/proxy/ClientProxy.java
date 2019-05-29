@@ -1,7 +1,7 @@
 package mod.azure.wowweapons.proxy;
 
-import mod.azure.wowweapons.IMultiType;
 import mod.azure.wowweapons.WoWWeaponsMod;
+import mod.azure.wowweapons.util.IMultiType;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

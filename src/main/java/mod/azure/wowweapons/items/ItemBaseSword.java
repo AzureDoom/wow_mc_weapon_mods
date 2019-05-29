@@ -1,8 +1,8 @@
 package mod.azure.wowweapons.items;
 
-import mod.azure.wowweapons.IMultiType;
 import mod.azure.wowweapons.WoWWeaponsMod;
 import mod.azure.wowweapons.proxy.CommonProxy;
+import mod.azure.wowweapons.util.IMultiType;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

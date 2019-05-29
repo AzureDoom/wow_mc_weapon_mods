@@ -1,9 +1,10 @@
-package mod.azure.wowweapons;
+package mod.azure.wowweapons.util;
 
 import java.util.List;
 
 import com.google.common.collect.ImmutableList;
 
+import mod.azure.wowweapons.WoWWeaponsMod;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.storage.loot.LootEntry;
 import net.minecraft.world.storage.loot.LootEntryTable;

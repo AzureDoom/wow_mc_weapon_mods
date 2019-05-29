@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import mod.azure.wowweapons.proxy.CommonProxy;
+import mod.azure.wowweapons.util.LootHandler;
+import mod.azure.wowweapons.util.MMORPGHandler;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
