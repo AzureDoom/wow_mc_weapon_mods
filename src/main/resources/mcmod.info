@@ -12,7 +12,7 @@
         "credits": "",
         "logoFile": "pack.png",
         "requiredMods": [ ],
-        "dependencies": [ "forge" ],
+        "dependencies": [ "ebwizardry", "mmorpg" ],
         "useDependencyInformation": "true"
     }
 ]
