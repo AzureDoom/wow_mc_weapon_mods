@@ -1,0 +1,8 @@
+# Blender MTL File: 'None'
+# Material Count: 1
+
+newmtl item_objectcomponents_weapon_sword_1h_naxxramas_d_01_m2_Geo_000
+Ka 0.250000 0.250000 0.250000
+Kd 1.000000 1.000000 1.000000
+d 1.000000
+map_Kd wowweapons:items/swordofathousandtruths_sword_1h_naxxramas_d_01
