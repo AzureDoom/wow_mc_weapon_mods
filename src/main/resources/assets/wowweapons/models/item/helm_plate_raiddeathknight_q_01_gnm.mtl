@@ -1,0 +1,14 @@
+# Blender MTL File: 'None'
+# Material Count: 2
+
+newmtl item_objectcomponents_head_helm_plate_raiddeathknight_q_01__000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+d 1.000000
+map_Kd wowweapons:items/helm_plate_raiddeathknight_q_01_gnm_helm_plate_raiddeathknight_q_01darkblue
+
+newmtl item_objectcomponents_head_helm_plate_raiddeathknight_q_01_gnm_
+Ka 0.250000 0.250000 0.250000
+Kd 1.000000 1.000000 1.000000
+d 1.000000
+map_Kd wowweapons:items/helm_plate_raiddeathknight_q_01_gnm_helm_plate_raiddeathknight_q_01darkblue
