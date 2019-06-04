@@ -1,7 +1,6 @@
 package mod.azure.wowweapons.items;
 
 import mod.azure.wowweapons.WoWWeaponsMod;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 import net.minecraft.util.ResourceLocation;

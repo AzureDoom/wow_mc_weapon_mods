@@ -1,8 +1,5 @@
 package mod.azure.wowweapons;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import mod.azure.wowweapons.proxy.CommonProxy;
 import mod.azure.wowweapons.util.LootHandler;
 import mod.azure.wowweapons.util.MMORPGHandler;
