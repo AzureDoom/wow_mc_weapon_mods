@@ -1,4 +1,4 @@
-package mod.azure.wowweapons.items;
+package mod.azure.wowweapons.items.ebwizardry;
 
 import electroblob.wizardry.constants.Element;
 import electroblob.wizardry.constants.Tier;

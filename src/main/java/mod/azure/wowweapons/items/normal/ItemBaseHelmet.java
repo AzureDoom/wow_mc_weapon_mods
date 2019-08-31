@@ -1,22 +1,22 @@
-package mod.azure.wowweapons.items;
+package mod.azure.wowweapons.items.normal;
 
 import mod.azure.wowweapons.WoWWeaponsMod;
+import net.minecraft.inventory.EntityEquipmentSlot;
+import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemSword;
 import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.common.util.EnumHelper;
 
-public class ItemBaseSword extends ItemSword {
+public class ItemBaseHelmet extends ItemArmor {
 
-	public ItemBaseSword(String name, int damage) {
-		super(EnumHelper.addToolMaterial(name, 1, 1561, 4F, damage, 4));
+	public ItemBaseHelmet(String name, ArmorMaterial material, EntityEquipmentSlot equipmentSlot) {
+		super(material, 0, equipmentSlot);
 		this.setTranslationKey(name);
 		this.setRegistryName(new ResourceLocation(WoWWeaponsMod.modid, name));
 		this.setCreativeTab(WoWWeaponsMod.tab);
-		this.setHasSubtypes(true);
 	}
-
+	
 	public String getTranslationKey(ItemStack stack) {
 		return super.getTranslationKey();
 	}
+
 }
