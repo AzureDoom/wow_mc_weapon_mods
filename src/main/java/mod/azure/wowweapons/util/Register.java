@@ -10,10 +10,11 @@ import com.google.common.collect.ImmutableList;
 
 import electroblob.wizardry.constants.Element;
 import electroblob.wizardry.constants.Tier;
-import mod.azure.wowweapons.items.ItemBaseBow;
-import mod.azure.wowweapons.items.ItemBaseHelmet;
-import mod.azure.wowweapons.items.ItemBaseMagic;
-import mod.azure.wowweapons.items.ItemBaseSword;
+import mod.azure.wowweapons.items.ebwizardry.ItemBaseMagic;
+import mod.azure.wowweapons.items.mineandslash.MSStaff;
+import mod.azure.wowweapons.items.normal.ItemBaseBow;
+import mod.azure.wowweapons.items.normal.ItemBaseHelmet;
+import mod.azure.wowweapons.items.normal.ItemBaseSword;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
@@ -75,6 +76,8 @@ public class Register {
 		if(Loader.isModLoaded("ebwizardry")) {
 			for (String s : NECROMANCY ) {items.add(new ItemBaseMagic(s, Tier.MASTER, Element.NECROMANCY));};
 			for (String s : SORCERY ) {items.add(new ItemBaseMagic(s, Tier.MASTER, Element.SORCERY));};
+		} else if (Loader.isModLoaded("mmorpg")) { 
+			for (String s : Bows ) {items.add(new MSStaff(s));};
 		} else {
 			for (String s : Bows ) {items.add(new ItemBaseBow(s));};
 		}
