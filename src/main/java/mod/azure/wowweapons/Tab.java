@@ -29,10 +29,12 @@ public class Tab extends CreativeTabs {
 		int ticks = Minecraft.getMinecraft().ingameGUI.getUpdateCounter();
 		if (ticks >= this.nextTicks) {
 			this.nextTicks = ticks + 8;
-			if (++this.index >= Register.variantList.size()) this.index = 0;
+			if (++this.index >= Register.variantList.size())
+				this.index = 0;
 
 			this.stack = Register.variantList.get(this.index);
-		}setBackgroundImageName("item_search.png");
+		}
+		setBackgroundImageName("item_search.png");
 
 		return this.createIcon();
 	}

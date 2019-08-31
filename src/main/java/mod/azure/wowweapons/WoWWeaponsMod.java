@@ -19,7 +19,7 @@ public class WoWWeaponsMod {
 
 	public static final String modid = "wowweapons";
 	public static final String MODNAME = "World of Warcraft Weapons";
-	public static final String version = "0.0.4";
+	public static final String version = "0.0.5";
 	public static final String dependencies = "required-after:ebwizardry;after:mmorpg";
 
 	@SidedProxy(clientSide = "mod.azure.wowweapons.proxy.ClientProxy", serverSide = "mod.azure.wowweapons.proxy.CommonProxy")
@@ -44,7 +44,7 @@ public class WoWWeaponsMod {
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent e) {
 		proxy.postInit();
-		if(Loader.isModLoaded("mmorpg")) {
+		if (Loader.isModLoaded("mmorpg")) {
 			MinecraftForge.EVENT_BUS.register(new MMORPGHandler());
 		}
 	}

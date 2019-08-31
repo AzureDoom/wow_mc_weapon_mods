@@ -14,7 +14,7 @@ public class ItemBaseHelmet extends ItemArmor {
 		this.setRegistryName(new ResourceLocation(WoWWeaponsMod.modid, name));
 		this.setCreativeTab(WoWWeaponsMod.tab);
 	}
-	
+
 	public String getTranslationKey(ItemStack stack) {
 		return super.getTranslationKey();
 	}

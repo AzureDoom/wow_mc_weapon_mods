@@ -7,8 +7,7 @@ import mod.azure.wowweapons.WoWWeaponsMod;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 
-public class ItemBaseMagic extends ItemWand  {
-
+public class ItemBaseMagic extends ItemWand {
 
 	public ItemBaseMagic(String name, Tier tier, Element element) {
 		super(tier, element);

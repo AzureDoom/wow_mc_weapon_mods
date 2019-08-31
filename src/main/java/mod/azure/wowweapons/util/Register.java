@@ -25,46 +25,41 @@ import net.minecraftforge.fml.common.Loader;
 public class Register {
 
 	private static final Logger LOGGER = LogManager.getLogger();
-	
-	private static final List<String> NECROMANCY = ImmutableList.of(
-			"marlis_touch", "touch_of_chaos", "thoughtblighter"
-			);
-	
-	private static final List<String> SORCERY = ImmutableList.of(
-			"doomfinger", "anzusscorn"
-			);
-	
-	//private static final List<String> EARTH = ImmutableList.of(
 
-			//);
+	private static final List<String> NECROMANCY = ImmutableList.of("marlis_touch", "touch_of_chaos",
+			"thoughtblighter");
 
-	//private static final List<String> LIGHTNING = ImmutableList.of(
+	private static final List<String> SORCERY = ImmutableList.of("doomfinger", "anzusscorn");
 
-			//);
+	// private static final List<String> EARTH = ImmutableList.of(
 
-	//private static final List<String> HEALING = ImmutableList.of(
+	// );
 
-			//);
-	
-	//private static final List<String> ICE = ImmutableList.of(
+	// private static final List<String> LIGHTNING = ImmutableList.of(
 
-			//);
+	// );
 
-	//private static final List<String> FIRE = ImmutableList.of(
+	// private static final List<String> HEALING = ImmutableList.of(
 
-			//);
-	
-	//private static final List<String> MAGIC = ImmutableList.of(
+	// );
 
-			//);
-	
-	private static final List<String> Bows = ImmutableList.of(
-			"marlis_touch", "touch_of_chaos", "touch_of_chaos", "doomfinger",
-			"anzusscorn"
-			);
-	
+	// private static final List<String> ICE = ImmutableList.of(
+
+	// );
+
+	// private static final List<String> FIRE = ImmutableList.of(
+
+	// );
+
+	// private static final List<String> MAGIC = ImmutableList.of(
+
+	// );
+
+	private static final List<String> Bows = ImmutableList.of("marlis_touch", "touch_of_chaos", "touch_of_chaos",
+			"doomfinger", "anzusscorn");
+
 	public static Item[] itemList;
-	public static NonNullList<ItemStack> variantList;  
+	public static NonNullList<ItemStack> variantList;
 	static {
 		List<Item> items = new ArrayList<Item>();
 		items.add(new ItemBaseSword("thunderfury", 22));
@@ -73,13 +68,25 @@ public class Register {
 		items.add(new ItemBaseSword("ashbringer", 42));
 		items.add(new ItemBaseSword("swordofathousandtruths", 180));
 		items.add(new ItemBaseHelmet("raiddeathknight_q_01_gnm", ArmorMaterial.DIAMOND, EntityEquipmentSlot.HEAD));
-		if(Loader.isModLoaded("ebwizardry")) {
-			for (String s : NECROMANCY ) {items.add(new ItemBaseMagic(s, Tier.MASTER, Element.NECROMANCY));};
-			for (String s : SORCERY ) {items.add(new ItemBaseMagic(s, Tier.MASTER, Element.SORCERY));};
-		} else if (Loader.isModLoaded("mmorpg")) { 
-			for (String s : Bows ) {items.add(new MSStaff(s));};
+		if (Loader.isModLoaded("ebwizardry")) {
+			for (String s : NECROMANCY) {
+				items.add(new ItemBaseMagic(s, Tier.MASTER, Element.NECROMANCY));
+			}
+			;
+			for (String s : SORCERY) {
+				items.add(new ItemBaseMagic(s, Tier.MASTER, Element.SORCERY));
+			}
+			;
+		} else if (Loader.isModLoaded("mmorpg")) {
+			for (String s : Bows) {
+				items.add(new MSStaff(s));
+			}
+			;
 		} else {
-			for (String s : Bows ) {items.add(new ItemBaseBow(s));};
+			for (String s : Bows) {
+				items.add(new ItemBaseBow(s));
+			}
+			;
 		}
 		itemList = items.toArray(new Item[items.size()]);
 	}

@@ -18,7 +18,7 @@ import static net.minecraftforge.fml.relauncher.Side.CLIENT;
 public class ClientProxy extends CommonProxy {
 
 	private static final Logger LOGGER = LogManager.getLogger();
-	
+
 	@EventHandler
 	public void preInit() {
 		OBJLoader.INSTANCE.addDomain(WoWWeaponsMod.modid);
@@ -37,10 +37,10 @@ public class ClientProxy extends CommonProxy {
 	@SubscribeEvent
 	public static void onRegisterModelsEvent(ModelRegistryEvent e) {
 		ForgeRegistries.ITEMS.getValuesCollection().stream()
-		.filter(item -> item.getRegistryName().getNamespace().equals(WoWWeaponsMod.modid))
-		.forEach(item -> {
-				ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
-		});
+				.filter(item -> item.getRegistryName().getNamespace().equals(WoWWeaponsMod.modid)).forEach(item -> {
+					ModelLoader.setCustomModelResourceLocation(item, 0,
+							new ModelResourceLocation(item.getRegistryName(), "inventory"));
+				});
 		LOGGER.debug("Registered models");
 	}
 }
