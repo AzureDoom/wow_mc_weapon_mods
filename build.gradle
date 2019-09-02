@@ -10,7 +10,7 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle.forge'
 
 
-version = "0.0.6"
+version = "0.0.7"
 group = "mod.azure.wowweapons"
 archivesBaseName = "WoWWeaponsMod"
 

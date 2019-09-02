@@ -19,7 +19,7 @@ public class WoWWeaponsMod {
 
 	public static final String modid = "wowweapons";
 	public static final String MODNAME = "World of Warcraft Weapons";
-	public static final String version = "0.0.6";
+	public static final String version = "0.0.7";
 	public static final String dependencies = "required-after:ebwizardry;required-after:mmorpg";
 
 	@SidedProxy(clientSide = "mod.azure.wowweapons.proxy.ClientProxy", serverSide = "mod.azure.wowweapons.proxy.CommonProxy")
