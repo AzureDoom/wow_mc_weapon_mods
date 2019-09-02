@@ -55,8 +55,7 @@ public class Register {
 
 	// );
 
-	private static final List<String> Bows = ImmutableList.of("marlis_touch", "touch_of_chaos", "touch_of_chaos",
-			"doomfinger", "anzusscorn");
+	private static final List<String> Bows = ImmutableList.of("marlis_touch", "touch_of_chaos", "doomfinger", "anzusscorn");
 
 	public static Item[] itemList;
 	public static NonNullList<ItemStack> variantList;
