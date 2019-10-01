@@ -3,6 +3,7 @@ package mod.azure.wowweapons;
 import mod.azure.wowweapons.proxy.CommonProxy;
 import mod.azure.wowweapons.util.LootHandler;
 import mod.azure.wowweapons.util.MMORPGHandler;
+import mod.azure.wowweapons.util.ModConfig;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Loader;
@@ -44,8 +45,10 @@ public class WoWWeaponsMod {
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent e) {
 		proxy.postInit();
-		if (Loader.isModLoaded("mmorpg")) {
-			MinecraftForge.EVENT_BUS.register(new MMORPGHandler());
+		if (ModConfig.USE_COMPATIBILITY_ITEMS) {
+			if (Loader.isModLoaded("mmorpg")) {
+				MinecraftForge.EVENT_BUS.register(new MMORPGHandler());
+			}
 		}
 	}
 }
