@@ -1,34 +1,34 @@
 package mod.azure.wowweapons.util;
 
-import com.robertx22.api.MineAndSlashAPI;
-import com.robertx22.config.non_mine_items.ConfigItem;
-import com.robertx22.database.gearitemslots.Staff;
-import com.robertx22.database.gearitemslots.Sword;
+import com.robertx22.mine_and_slash.api.MineAndSlashAPI;
+import com.robertx22.mine_and_slash.config.compatible_items.ConfigItem;
+import com.robertx22.mine_and_slash.database.gearitemslots.weapons.Staff;
+import com.robertx22.mine_and_slash.database.gearitemslots.weapons.Sword;
 
-import net.minecraftforge.fml.common.Loader;
+import mod.azure.wowweapons.WoWWeaponsMod;
 
 public class MMORPGHandler {
 
 	public MMORPGHandler() {
-		MineAndSlashAPI.addCompatibleItem("wowweapons:marlis_touch",
-				new ConfigItem().setType(new Staff()).setMaxRarity(4).setMinRarity(4));
-		MineAndSlashAPI.addCompatibleItem("wowweapons:touch_of_chaos",
-				new ConfigItem().setType(new Staff()).setMaxRarity(4).setMinRarity(4));
-		MineAndSlashAPI.addCompatibleItem("wowweapons:thoughtblighter",
-				new ConfigItem().setType(new Staff()).setMaxRarity(2).setMinRarity(2));
-		MineAndSlashAPI.addCompatibleItem("wowweapons:doomfinger",
-				new ConfigItem().setType(new Staff()).setMaxRarity(4).setMinRarity(4));
-		MineAndSlashAPI.addCompatibleItem("wowweapons:anzusscorn",
-				new ConfigItem().setType(new Staff()).setMaxRarity(2).setMinRarity(2));
-		MineAndSlashAPI.addCompatibleItem("wowweapons:thunderfury",
-				new ConfigItem().setType(new Sword()).setMaxRarity(5).setMinRarity(5));
-		MineAndSlashAPI.addCompatibleItem("wowweapons:armageddon",
-				new ConfigItem().setType(new Sword()).setMaxRarity(4).setMinRarity(4));
-		MineAndSlashAPI.addCompatibleItem("wowweapons:frostmourne",
-				new ConfigItem().setType(new Sword()).setMaxRarity(5).setMinRarity(5));
-		MineAndSlashAPI.addCompatibleItem("wowweapons:ashbringer",
-				new ConfigItem().setType(new Sword()).setMaxRarity(5).setMinRarity(5));
-		MineAndSlashAPI.addCompatibleItem("wowweapons:swordofathousandtruths",
-				new ConfigItem().setType(new Sword()).setMaxRarity(5).setMinRarity(5));
+		MineAndSlashAPI.addCompatibleItem(WoWWeaponsMod.MODID + ":marlis_touch",
+				new ConfigItem().setType(Staff.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(WoWWeaponsMod.MODID + ":touch_of_chaos",
+				new ConfigItem().setType(Staff.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(WoWWeaponsMod.MODID + ":doomfinger",
+				new ConfigItem().setType(Staff.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(WoWWeaponsMod.MODID + ":anzusscorn",
+				new ConfigItem().setType(Staff.INSTANCE).setSalvagable(true));
+		WoWWeaponsMod.LOGGER.info("Registered Staffs");
+		MineAndSlashAPI.addCompatibleItem(WoWWeaponsMod.MODID + ":thunderfury",
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(WoWWeaponsMod.MODID + ":armageddon",
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(WoWWeaponsMod.MODID + ":frostmourne",
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(WoWWeaponsMod.MODID + ":ashbringer",
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(WoWWeaponsMod.MODID + ":swordofathousandtruths",
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		WoWWeaponsMod.LOGGER.info("Registered Swords");
 	}
 }

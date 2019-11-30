@@ -1,0 +1,13 @@
+modLoader="javafml"
+loaderVersion="[28,)"
+issueTrackerURL="https://github.com/AzureZhen/wow_mc_weapon_mods/issues"
+logoFile="logo.png"
+[[mods]] 
+modId="wowweapons"
+version="${file.jarVersion}" 
+displayName="World of Warcraft Weapons"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/world-of-warcraft-weapons" 
+authors="AzureZhen" 
+description='''
+Adds World of Warcraft weapons into Minecraft
+'''
