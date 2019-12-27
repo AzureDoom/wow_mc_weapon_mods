@@ -5,7 +5,7 @@ newmtl Clouds_01
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 d 0.000000
-map_Kd wowweapons:items/Clouds_01
+map_Kd wowweapons:items/clouds_01
 
 newmtl Glow_01
 Ka 1.000000 1.000000 1.000000
