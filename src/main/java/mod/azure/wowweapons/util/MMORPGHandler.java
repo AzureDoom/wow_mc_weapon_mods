@@ -18,6 +18,8 @@ public class MMORPGHandler {
 		//new ConfigItem().setType(Staff.INSTANCE).setSalvagable(true));
 		//MineAndSlashAPI.addCompatibleItem(WoWWeaponsMod.MODID + ":anzusscorn",
 		//new ConfigItem().setType(Staff.INSTANCE).setSalvagable(true));
+		//MineAndSlashAPI.addCompatibleItem(WoWWeaponsMod.MODID + ":thoughtblighter",
+				//new ConfigItem().setType(Staff.INSTANCE).setSalvagable(true));
 		WoWWeaponsMod.LOGGER.info("Registered Staffs");
 		//MineAndSlashAPI.addCompatibleItem(WoWWeaponsMod.MODID + ":thunderfury",
 		//new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));

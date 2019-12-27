@@ -39,7 +39,9 @@ public class WoWItems {
 						new StaffItem(new Item.Properties().group(WoWTabs.WoWItemGroup), 0)
 								.setRegistryName(location("doomfinger")),
 						new StaffItem(new Item.Properties().group(WoWTabs.WoWItemGroup), 0)
-								.setRegistryName(location("anzusscorn")));
+								.setRegistryName(location("anzusscorn")),
+						new StaffItem(new Item.Properties().group(WoWTabs.WoWItemGroup), 0)
+								.setRegistryName(location("thoughtblighter")));
 			} else {
 				event.getRegistry().registerAll(
 						new BowItem(new Item.Properties().group(WoWTabs.WoWItemGroup))
@@ -48,6 +50,8 @@ public class WoWItems {
 								.setRegistryName(location("touch_of_chaos")),
 						new BowItem(new Item.Properties().group(WoWTabs.WoWItemGroup))
 								.setRegistryName(location("doomfinger")),
+						new BowItem(new Item.Properties().group(WoWTabs.WoWItemGroup))
+								.setRegistryName(location("thoughtblighter")),
 						new BowItem(new Item.Properties().group(WoWTabs.WoWItemGroup))
 								.setRegistryName(location("anzusscorn")));
 			}
