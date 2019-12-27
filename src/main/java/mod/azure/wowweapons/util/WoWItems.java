@@ -1,17 +1,64 @@
 package mod.azure.wowweapons.util;
 
+import mod.azure.wowweapons.WoWWeaponsMod;
+import mod.azure.wowweapons.items.StaffItem;
+import net.minecraft.item.BowItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemTier;
+import net.minecraft.item.SwordItem;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.ModList;
+import net.minecraftforge.fml.common.Mod;
 
 public class WoWItems {
+	public static Item thunderfury;
 
-	public static Item wow_thunderfury;
-	public static Item wow_armageddon;
-	public static Item wow_frostmourne;
-	public static Item wow_ashbringer;
-	public static Item wow_swordofathousandtruths;
-	
-	public static Item wow_marlis_touch;
-	public static Item wow_touch_of_chaos;
-	public static Item wow_doomfinger; 
-	public static Item wow_anzusscorn;
+	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
+	public static class RegistryEvents {
+		@SubscribeEvent
+		public static void registerItems(final RegistryEvent.Register<Item> event) {
+			event.getRegistry().registerAll(
+					thunderfury = new SwordItem(ItemTier.DIAMOND, 0, 6.0f,
+							new Item.Properties().group(WoWTabs.WoWItemGroup)).setRegistryName(location("thunderfury")),
+					new SwordItem(ItemTier.DIAMOND, 0, 6.0f, new Item.Properties().group(WoWTabs.WoWItemGroup))
+							.setRegistryName(location("armageddon")),
+					new SwordItem(ItemTier.DIAMOND, 0, 6.0f, new Item.Properties().group(WoWTabs.WoWItemGroup))
+							.setRegistryName(location("frostmourne")),
+					new SwordItem(ItemTier.DIAMOND, 0, 6.0f, new Item.Properties().group(WoWTabs.WoWItemGroup))
+							.setRegistryName(location("ashbringer")),
+					new SwordItem(ItemTier.DIAMOND, 0, 6.0f, new Item.Properties().group(WoWTabs.WoWItemGroup))
+							.setRegistryName(location("swordofathousandtruths")));
+			if (ModList.get().isLoaded("mmorpg")) {
+				event.getRegistry().registerAll(
+						new StaffItem(new Item.Properties().group(WoWTabs.WoWItemGroup), 0)
+								.setRegistryName(location("marlis_touch")),
+						new StaffItem(new Item.Properties().group(WoWTabs.WoWItemGroup), 0)
+								.setRegistryName(location("touch_of_chaos")),
+						new StaffItem(new Item.Properties().group(WoWTabs.WoWItemGroup), 0)
+								.setRegistryName(location("doomfinger")),
+						new StaffItem(new Item.Properties().group(WoWTabs.WoWItemGroup), 0)
+								.setRegistryName(location("anzusscorn")),
+						new StaffItem(new Item.Properties().group(WoWTabs.WoWItemGroup), 0)
+								.setRegistryName(location("thoughtblighter")));
+			} else {
+				event.getRegistry().registerAll(
+						new BowItem(new Item.Properties().group(WoWTabs.WoWItemGroup))
+								.setRegistryName(location("marlis_touch")),
+						new BowItem(new Item.Properties().group(WoWTabs.WoWItemGroup))
+								.setRegistryName(location("touch_of_chaos")),
+						new BowItem(new Item.Properties().group(WoWTabs.WoWItemGroup))
+								.setRegistryName(location("doomfinger")),
+						new BowItem(new Item.Properties().group(WoWTabs.WoWItemGroup))
+								.setRegistryName(location("thoughtblighter")),
+						new BowItem(new Item.Properties().group(WoWTabs.WoWItemGroup))
+								.setRegistryName(location("anzusscorn")));
+			}
+		}
+
+		public static ResourceLocation location(String name) {
+			return new ResourceLocation(WoWWeaponsMod.MODID, name);
+		}
+	}
 }

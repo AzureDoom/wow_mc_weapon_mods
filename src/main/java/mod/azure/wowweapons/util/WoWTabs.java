@@ -10,7 +10,11 @@ public class WoWTabs {
 	public static final ItemGroup WoWItemGroup = (new ItemGroup("wowweapons") {
 		@OnlyIn(Dist.CLIENT)
 		public ItemStack createIcon() {
-			return new ItemStack(WoWItems.wow_thunderfury);
+			return new ItemStack(WoWItems.thunderfury);
 		}
-	});
+
+		public boolean hasSearchBar() {
+			return true;
+		}
+	}).setBackgroundImageName("item_search.png");
 }
