@@ -24,6 +24,8 @@ public class Config {
 	}
 
 	public BooleanValue USE_COMPATIBILITY_ON_ITEMS;
+	public BooleanValue USE_CHESTLOOTSYSTEM;
+	public BooleanValue USE_MINESLASHLOOTSYSTEM;
 
 	Config(ForgeConfigSpec.Builder builder) {
 		builder.comment("Compatibility Settings").push(NAME);
@@ -32,6 +34,14 @@ public class Config {
 				.comment("Turns on Auto Compatibility for Mine and Slash stats. Turn off to configure yourself")
 				.translation("wowweapons.compatibility.use_compatibility_on_items")
 				.define("USE_COMPATIBILITY_ON_ITEMS", true);
+
+		USE_CHESTLOOTSYSTEM = builder.comment("Turns on the loot system of adding items to chests")
+				.translation("wowweapons.compatibility.use_chestlootsystem").define("USE_CHESTLOOTSYSTEM", true);
+
+		USE_MINESLASHLOOTSYSTEM = builder
+				.comment("Turns on the loot system of adding items to Mine and Slash Loot Drops.")
+				.translation("wowweapons.compatibility.use_mineslashlootsystem")
+				.define("USE_MINESLASHLOOTSYSTEM", true);
 
 		builder.pop();
 	}
