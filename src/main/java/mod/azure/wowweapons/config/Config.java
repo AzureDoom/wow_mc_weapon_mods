@@ -32,24 +32,24 @@ public class Config {
 		public ConfigValue<Integer> BOW_MAXDAMAGE;
 
 		ServerConfig(ForgeConfigSpec.Builder builder) {
-			builder.comment("Mine and Slash Compatibility").push("Mine and Slash Compatibility")
-					.translation("wowweapons.config.use_compatibility_on_items");
-			USE_COMPATIBILITY_ON_ITEMS = builder.define("Enable", true);
-			builder.comment("Chest Loot Setting").push("Chest Loot Setting")
-					.translation("wowweapons.config.use_chestlootsystem");
-			USE_CHESTLOOTSYSTEM = builder.define("Enable", true);
-			builder.comment("Mine and Slash Loot Setting").push("Mine and Slash Loot Setting")
-					.translation("wowweapons.config.use_mineslashlootsystem");
-			USE_MINESLASHLOOTSYSTEM = builder.define("Enable", true);
-			builder.comment("Sets the max duriabily of Swords.").push("Sets the max duriabily of Swords.")
-					.translation("wowweapons.config.sword_maxdamage");
-			SWORD_MAXDAMAGE = builder.define("SWORD_MAXDAMAGE", 1000);
-			builder.comment("Sets the max duriabily of Staffs.").push("Sets the max duriabily of Staffs.")
-					.translation("wowweapons.config.staff_maxdamage");
-			STAFF_MAXDAMAGE = builder.define("STAFF_MAXDAMAGE", 1000);
-			builder.comment("Sets the max duriabily of Bows.").push("Sets the max duriabily of Bows.")
-					.translation("wowweapons.config.bow_maxdamage");
-			BOW_MAXDAMAGE = builder.define("BOW_MAXDAMAGE", 1000);
+			builder.push("general");
+			USE_COMPATIBILITY_ON_ITEMS = builder.comment("Mine and Slash Compatibility")
+					.translation(WoWWeaponsMod.MODID + ".config.use_compatibility_on_items")
+					.define("USE_COMPATIBILITY_ON_ITEMS", true);
+			USE_CHESTLOOTSYSTEM = builder.comment("Add loot to Chest loot system")
+					.translation(WoWWeaponsMod.MODID + ".config.use_chestlootsystem")
+					.define("USE_CHESTLOOTSYSTEM", true);
+			USE_MINESLASHLOOTSYSTEM = builder.comment("Add loot to Mine and Slash Loot System")
+					.translation(WoWWeaponsMod.MODID + ".config.use_mineslashlootsystem")
+					.define("USE_MINESLASHLOOTSYSTEM", true);
+			builder.pop();
+			builder.push("gear");
+			STAFF_MAXDAMAGE = builder.comment("Staff Max Damage")
+					.translation(WoWWeaponsMod.MODID + ".config.staff_maxdamage").define("STAFF_MAXDAMAGE", 1000);
+			SWORD_MAXDAMAGE = builder.comment("Sword Max Damage")
+					.translation(WoWWeaponsMod.MODID + ".config.sword_maxdamage").define("SWORD_MAXDAMAGE", 1000);
+			BOW_MAXDAMAGE = builder.comment("Bow Max Damage").translation(WoWWeaponsMod.MODID + ".config.bow_maxdamage")
+					.define("BOW_MAXDAMAGE", 1000);
 			builder.pop();
 		}
 	}
