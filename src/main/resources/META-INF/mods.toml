@@ -11,3 +11,9 @@ authors="AzureZhen"
 description='''
 Adds World of Warcraft weapons into Minecraft
 '''
+[[dependencies.dothack]]
+    modId="forge"
+    mandatory=true
+    versionRange="[28.2.2,)"
+    ordering="NONE"
+    side="BOTH"
