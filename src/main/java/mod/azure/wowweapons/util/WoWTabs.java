@@ -10,7 +10,7 @@ public class WoWTabs {
 	public static final ItemGroup WoWItemGroup = (new ItemGroup("wowweapons") {
 		@OnlyIn(Dist.CLIENT)
 		public ItemStack createIcon() {
-			return new ItemStack(WoWItems.thunderfury);
+			return new ItemStack(WoWItems.tabicon);
 		}
 
 		public boolean hasSearchBar() {

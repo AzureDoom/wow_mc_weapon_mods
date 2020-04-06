@@ -1,0 +1,22 @@
+{
+  "id": "touchofchaos",
+  "weight": 250,
+  "rarity": 4,
+  "tier": 2,
+  "registry": "unique_gear",
+  "lang_file_string": "item.wowweapons.uniques.staff.touchofchaos",
+  "lang_file_desc_string": "item.wowweapons.uniques.staff.touchofchaos.desc",
+  "primary_stats": [
+    "staff_damage_flat"
+  ],
+  "unique_stats": [
+    "spell_damage_percent",
+    "health_regen_percent"
+  ],
+  "can_get_set": false,
+  "requirements": {
+    "intelligence": 0.75
+  },
+  "gear_type": "staff",
+  "item_id": "wowweapons:touch_of_chaos"
+}

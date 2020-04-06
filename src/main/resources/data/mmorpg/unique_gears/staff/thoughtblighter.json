@@ -1,0 +1,21 @@
+{
+	"id": "thoughtblighter",
+	"weight": 250,
+	"rarity": 4,
+	"tier": 1,
+	"registry": "unique_gear",
+	"lang_file_string": "item.wowweapons.uniques.staff.thoughtblighter",
+	"lang_file_desc_string": "item.wowweapons.uniques.staff.thoughtblighter.desc",
+	"primary_stats": [
+		"mana_regen_percent"
+	],
+	"unique_stats": [
+		"spell_damage_percent"
+	],
+	"can_get_set": false,
+	"requirements": {
+		"intelligence": 0.75
+	},
+	"gear_type": "staff",
+	"item_id": "wowweapons:thoughtblighter"
+}
